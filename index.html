@@ -9,70 +9,66 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="hero-img">
-            <div class="logo-bar">
-                <img src="assets/odin-lined.png" alt="Company logo">
-                <h1>COMPANY NAME</h1>
+    <div class="content">
+        <div class="image-section">
+            <div class="banner">
+                <img src="./assets/odin-lined.png" alt="Company logo">
+                <h1>COMPANY</h1>
             </div>
         </div>
 
-        <main>
-            <section class="description">
-                <p>
-                    This is not a real online service! Lorem ipsum dolor sit
-                    amet consectetur adipiscing elit. Officiis alias aut
-                    veritatis animi. <br> Sign up <em>now</em> to get started.
-                </p>
-                <p>
-                    You <em>know</em> you want to.
-                </p>
-            </section>
+        <div class="text-section">
+            <p>
+                This is not a real online service! Lorem ipsum dolor sit
+                amet consectetur adipiscing elit. Officiis alias aut
+                veritatis animi. <br> Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
 
             <form action="#">
-                <div class="form-container">
+                <div class="inputs-section">
                     <p>Let's do this!</p>
 
-                    <fieldset>
-                        <div class="form-cell">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name">
+                    <div class="inputs">
+                    <div>
+                        <div>
+                          <label for="first-name">FIRST NAME</label>
+                          <input type="text" id="first-name" name="first-name">
                         </div>
-                        <div class="form-cell">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name">
+                        <div>
+                          <label for="last-name">LAST NAME</label>
+                          <input type="text" class="focus" id="last-name" name="last-name">
                         </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <div class="form-cell">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <div>
+                          <label for="email">EMAIL</label>
+                          <input type="email" id="email" name="email"/>
                         </div>
-                        <div class="form-cell">
-                            <label for="phone">Phone</label>
-                            <input type="tel" name="phone" id="phone">
+                        <div>
+                          <label for="phone-number">PHONE NUMBER</label>
+                          <input type="tel" id="phone-number" name="phone-number"/>
                         </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <div class="form-cell">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                    </div>
+                    <div>
+                        <div>
+                          <label for="password">PASSWORD</label>
+                          <input type="password" class="error" id="password" name="password">
+                          <p class="error-message">*Passwords do not match</p>
                         </div>
-                        <div class="form-cell">
-                            <label for="confirm-pwd">Confirm Password</label>
-                            <input type="password" name="confirm-pwd" id="confirm-pwd">
+                        <div>
+                          <label for="confirm-password">CONFIRM PASSWORD</label>
+                          <input type="password" class="error" id="confirm-password" name="confirm-password">
                         </div>
-                    </fieldset>
+                    </div>
+                    </div>
                 </div>
-
-                <div class="button-area">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
+                <button type="submit" id="create-account">Create Account</button>
             </form>
-        </main>
+            <p class="log-in">Already have an account? <a href="#">Log In</a></p>
+        </div>
     </div>
 </body>
 </html>
